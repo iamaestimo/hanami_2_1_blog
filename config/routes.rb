@@ -2,6 +2,7 @@
 
 module HanamiBlogApp
   class Routes < Hanami::Routes
-    # Add your routes here. See https://guides.hanamirb.org/routing/overview/ for details.
+    root to: "home.show"
+    get "/posts/:id", to: "posts.show"
   end
 end
